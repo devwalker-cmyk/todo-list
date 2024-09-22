@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TO DO LIST</title>
+    <title>Todos</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
     <header>
-        <h1>TO DO LIST</h1>
+        <h1>My Todos</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -18,8 +18,15 @@
         </nav>
     </header>
     <main>
-        <h2>Welcome to Your TO DO LIST</h2>
-        <p>Manage your tasks efficiently!</p>
+        <h2>Your Tasks</h2>
+        <ul id="todo-list">
+            <!-- Danh sách todo sẽ được hiển thị ở đây -->
+        </ul>
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Add a new todo" required>
+            <button type="submit">Add Todo</button>
+        </form>
     </main>
+    <script src="scripts/todos.js"></script>
 </body>
 </html>
